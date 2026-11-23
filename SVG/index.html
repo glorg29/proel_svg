@@ -1,1 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SVG Art Assignment</title>
+  <style>
+    body {
+      margin: 24px 12px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px 16px;
+      max-width: 920px;
+      margin: 24px auto;
+    }
+    figure { margin: 0; }
+    svg {
+      display: block;
+      margin: 0 auto 8px;
+      background: #ffffff;
+      outline: 1px solid #999999;
+    }
+    figcaption {
+      max-width: 200px;
+      margin: auto;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>SVG Art Assignment</h1>
 
+    <div class="gallery">
+      <figure>
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300" role="img" aria-label="Lollipop">
+          <line x1="100" y1="115" x2="100" y2="250" stroke="#555" stroke-width="7" stroke-linecap="round" />
+          <circle cx="100" cy="105" r="50" fill="#aaa" stroke="#222" stroke-width="3" />
+          <circle cx="83" cy="86" r="9" fill="white" />
+        </svg>
+        <figcaption>1. Line and Circle</figcaption>
+      </figure>
+
+      <figure>
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300" role="img" aria-label="Domino tiles">
+          <rect x="43" y="49" width="114" height="202" rx="9" fill="#333" />
+          <rect x="53" y="149" width="94" height="2" fill="#aaa" />
+          <circle cx="76" cy="78" r="10" fill="white" />
+          <circle cx="124" cy="124" r="10" fill="white" />
+          <circle cx="76" cy="177" r="10" fill="white" />
+          <circle cx="100" cy="201" r="10" fill="white" />
+          <circle cx="124" cy="225" r="10" fill="white" />
+        </svg>
+        <figcaption>2. Circle and Rectangle</figcaption>
+      </figure>
+
+      <figure>
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300" role="img" aria-label="Mountain moon">
+          <circle cx="132" cy="92" r="25" fill="#aaa" />
+          <polyline points="14,215 74,109 112,173 139,134 186,215" fill="none" stroke="#333" stroke-width="5" stroke-linejoin="round" />
+        </svg>
+        <figcaption>3. Polyline and Circle</figcaption>
+      </figure>
+
+      <figure>
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300" role="img" aria-label="Paper boat">
+          <ellipse cx="100" cy="201" rx="74" ry="9" fill="#ccc" />
+          <polygon points="52,162 100,91 100,162" fill="#999" />
+          <polygon points="103,111 150,162 103,162" fill="#ccc" />
+          <polygon points="19,165 181,165 146,195 55,195" fill="#444" />
+        </svg>
+        <figcaption>4. Polygon and Ellipse</figcaption>
+      </figure>
+
+      <figure>
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300" role="img" aria-label="Lollipop stand">
+          <rect x="44" y="228" width="112" height="23" fill="#555" />
+          <line x1="100" y1="117" x2="100" y2="228" stroke="#555" stroke-width="7" />
+          <circle cx="100" cy="105" r="44" fill="#444" />
+          <circle cx="100" cy="105" r="29" fill="#bbb" />
+          <circle cx="100" cy="105" r="13" fill="white" />
+        </svg>
+        <figcaption>5. Circle, Line and Rectangle</figcaption>
+      </figure>
+
+      <figure>
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300" role="img" aria-label="Kite">
+          <polyline points="100,174 118,200 96,220 113,247" fill="none" stroke="#555" stroke-width="4" />
+          <polygon points="100,54 148,103 100,178 52,103" fill="#aaa" stroke="#333" stroke-width="3" />
+          <polyline points="52,103 100,118 148,103" fill="none" stroke="#555" stroke-width="3" />
+        </svg>
+        <figcaption>6. Polyline and Polygon</figcaption>
+      </figure>
+
+      <figure>
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300" role="img" aria-label="Cabin at night">
+          <circle cx="148" cy="64" r="18" fill="#aaa" />
+          <ellipse cx="100" cy="222" rx="76" ry="10" fill="#ddd" />
+          <rect x="53" y="148" width="94" height="72" fill="#bbb" />
+          <polygon points="38,149 100,92 162,149" fill="#444" />
+          <rect x="90" y="178" width="22" height="42" fill="#555" />
+          <polyline points="23,219 50,219 63,222" fill="none" stroke="#777" stroke-width="3" />
+        </svg>
+        <figcaption>7. Circle, Rectangle, Polyline, Polygon and Ellipse</figcaption>
+      </figure>
+    </div>
+  </main>
+</body>
+</html>
